@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 extern int pfd[2];
-void setupPipe();
+void setupPipe(void);
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

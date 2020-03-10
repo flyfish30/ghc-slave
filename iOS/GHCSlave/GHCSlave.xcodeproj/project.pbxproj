@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C71A0CC2417DB4E00103F8C /* libHSlibhs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C71A0CB2417DB4E00103F8C /* libHSlibhs.a */; };
 		DA506B261E9D15A6001E408C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA506B251E9D15A6001E408C /* main.m */; };
 		DA506B291E9D15A6001E408C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA506B281E9D15A6001E408C /* AppDelegate.m */; };
 		DA506B2C1E9D15A6001E408C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA506B2B1E9D15A6001E408C /* ViewController.m */; };
 		DA506B2F1E9D15A6001E408C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA506B2D1E9D15A6001E408C /* LaunchScreen.storyboard */; };
 		DA506B311E9D15A6001E408C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA506B301E9D15A6001E408C /* Assets.xcassets */; };
 		DA506B341E9D15A6001E408C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA506B321E9D15A6001E408C /* Main.storyboard */; };
-		DACB96D91EE73E7D0001AE9F /* libhs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DACB96D81EE73E7D0001AE9F /* libhs.a */; };
 		DACB96DB1EE73F090001AE9F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DACB96DA1EE73F090001AE9F /* libiconv.tbd */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5C71A0CB2417DB4E00103F8C /* libHSlibhs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHSlibhs.a; path = binaries/iOS/libHSlibhs.a; sourceTree = "<group>"; };
 		DA506B211E9D15A6001E408C /* GHCSlave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHCSlave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA506B251E9D15A6001E408C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA506B271E9D15A6001E408C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,8 +41,6 @@
 		DA506B301E9D15A6001E408C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA506B331E9D15A6001E408C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA506B351E9D15A6001E408C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA506B3C1E9D15F1001E408C /* libGHCSlave.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGHCSlave.dylib; path = ../../libGHCSlave.dylib; sourceTree = "<group>"; };
-		DACB96D81EE73E7D0001AE9F /* libhs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhs.a; path = "hs-libs/libhs.a"; sourceTree = "<group>"; };
 		DACB96DA1EE73F090001AE9F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DACB96DB1EE73F090001AE9F /* libiconv.tbd in Frameworks */,
-				DACB96D91EE73E7D0001AE9F /* libhs.a in Frameworks */,
+				5C71A0CC2417DB4E00103F8C /* libHSlibhs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				DACB96DA1EE73F090001AE9F /* libiconv.tbd */,
-				DACB96D81EE73E7D0001AE9F /* libhs.a */,
-				DA506B3C1E9D15F1001E408C /* libGHCSlave.dylib */,
+				5C71A0CB2417DB4E00103F8C /* libHSlibhs.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,7 +134,7 @@
 		DA506B191E9D15A5001E408C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Moritz Angermann";
 				TargetAttributes = {
 					DA506B201E9D15A6001E408C = {
@@ -148,7 +146,7 @@
 			};
 			buildConfigurationList = DA506B1C1E9D15A5001E408C /* Build configuration list for PBXProject "GHCSlave" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -214,21 +212,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -263,21 +270,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -313,6 +329,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/../..",
 					"$(PROJECT_DIR)/hs-libs",
+					"$(PROJECT_DIR)/binaries/iOS",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zw3rk.ghc-slave";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -330,6 +347,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/../..",
 					"$(PROJECT_DIR)/hs-libs",
+					"$(PROJECT_DIR)/binaries/iOS",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zw3rk.ghc-slave";
 				PRODUCT_NAME = "$(TARGET_NAME)";
